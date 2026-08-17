@@ -1,4 +1,5 @@
 import {PrismaClient,CategoryMode} from '@prisma/client';import {hash} from 'bcryptjs';import {normalizePersian,initialLetter} from '@esmfamil/persian-text';
+try{process.loadEnvFile()}catch{/* env already provided (e.g. by prisma CLI) */}
 const db=new PrismaClient();
 const categories=[
 ['اسم','name','نام کوچک', 'OPEN'],['نام خانوادگی','family','نام خانوادگی','OPEN'],['شهر ایران','iran-city','شهرهای ایران','CLOSED'],['کشور','country','کشورها','CLOSED'],['استان ایران','province','استان‌های ایران','CLOSED'],['حیوان','animal','جانوران','OPEN'],['پرنده','bird','پرندگان','OPEN'],['میوه','fruit','میوه‌ها','OPEN'],['غذا','food','غذاها','OPEN'],['نوشیدنی','drink','نوشیدنی‌ها','OPEN'],['رنگ','color','رنگ‌ها','CLOSED'],['گل و گیاه','plant','گیاهان','OPEN'],['شغل','job','مشاغل','OPEN'],['پوشاک','clothing','پوشاک','OPEN'],['عضو بدن','body','اعضای بدن','CLOSED'],['وسیله نقلیه','vehicle','وسایل نقلیه','OPEN'],['وسیله و اشیا','object','اشیا','OPEN'],['ورزش','sport','ورزش‌ها','OPEN'],['ساز موسیقی','instrument','سازها','OPEN'],['شخصیت مشهور','famous','چهره‌های مشهور','OPEN']

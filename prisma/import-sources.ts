@@ -2,6 +2,7 @@ import {PrismaClient} from '@prisma/client';
 import {readFile,readdir} from 'node:fs/promises';
 import {normalizePersian,initialLetter} from '@esmfamil/persian-text';
 
+try{process.loadEnvFile()}catch{/* env already provided (e.g. by prisma CLI) */}
 const db=new PrismaClient();
 type SourceRow={slug:string;value:string;source:string;confidence:number};
 const base=new URL('./data/sources/',import.meta.url);
