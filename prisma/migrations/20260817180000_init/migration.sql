@@ -1,0 +1,2 @@
+-- Baseline marker. Use `pnpm db:migrate` to generate the environment-specific initial migration
+-- from prisma/schema.prisma during first development setup.

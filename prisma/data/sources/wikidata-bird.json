@@ -1,0 +1,612 @@
+[
+  {
+    "id": "Q4690004",
+    "label": "غاز آفریقایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q4690004"
+  },
+  {
+    "id": "Q28823117",
+    "label": "جیجاق پیسه گلوسفید",
+    "sourceUrl": "http://www.wikidata.org/entity/Q28823117"
+  },
+  {
+    "id": "Q138756",
+    "label": "کبوتر خانگی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q138756"
+  },
+  {
+    "id": "Q177856",
+    "label": "کرکس گریفن",
+    "sourceUrl": "http://www.wikidata.org/entity/Q177856"
+  },
+  {
+    "id": "Q391632",
+    "label": "چر امی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q391632"
+  },
+  {
+    "id": "Q733827",
+    "label": "جی. آی. جو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q733827"
+  },
+  {
+    "id": "Q1272830",
+    "label": "مرغ باران زینو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1272830"
+  },
+  {
+    "id": "Q935880",
+    "label": "الیکایی صخره",
+    "sourceUrl": "http://www.wikidata.org/entity/Q935880"
+  },
+  {
+    "id": "Q978378",
+    "label": "مرغ آیام سمانی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q978378"
+  },
+  {
+    "id": "Q2092297",
+    "label": "عقاب",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2092297"
+  },
+  {
+    "id": "Q4142381",
+    "label": "کبوتر جنگی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q4142381"
+  },
+  {
+    "id": "Q3625564",
+    "label": "گرانا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3625564"
+  },
+  {
+    "id": "Q5101886",
+    "label": "کبوتر مسابقه",
+    "sourceUrl": "http://www.wikidata.org/entity/Q5101886"
+  },
+  {
+    "id": "Q5433715",
+    "label": "کبوتر تجملی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q5433715"
+  },
+  {
+    "id": "Q130933",
+    "label": "شاهبوف",
+    "sourceUrl": "http://www.wikidata.org/entity/Q130933"
+  },
+  {
+    "id": "Q1085160",
+    "label": "مرغ ویاندوت",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1085160"
+  },
+  {
+    "id": "Q1094864",
+    "label": "مرغ کوشین",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1094864"
+  },
+  {
+    "id": "Q806971",
+    "label": "بانتام",
+    "sourceUrl": "http://www.wikidata.org/entity/Q806971"
+  },
+  {
+    "id": "Q457471",
+    "label": "شاهین دمسرخ",
+    "sourceUrl": "http://www.wikidata.org/entity/Q457471"
+  },
+  {
+    "id": "Q1006819",
+    "label": "مرغ فونیکس",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1006819"
+  },
+  {
+    "id": "Q990357",
+    "label": "مرغ گردن لخت",
+    "sourceUrl": "http://www.wikidata.org/entity/Q990357"
+  },
+  {
+    "id": "Q31354",
+    "label": "غاز قونما",
+    "sourceUrl": "http://www.wikidata.org/entity/Q31354"
+  },
+  {
+    "id": "Q7430012",
+    "label": "غاز اسکانیا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q7430012"
+  },
+  {
+    "id": "Q579035",
+    "label": "آراکانا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q579035"
+  },
+  {
+    "id": "Q2844815",
+    "label": "مرغ آمریکانا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2844815"
+  },
+  {
+    "id": "Q2914903",
+    "label": "مرغ سلطان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2914903"
+  },
+  {
+    "id": "Q7374674",
+    "label": "بوقلمون رویال پالم",
+    "sourceUrl": "http://www.wikidata.org/entity/Q7374674"
+  },
+  {
+    "id": "Q244179",
+    "label": "بانتام",
+    "sourceUrl": "http://www.wikidata.org/entity/Q244179"
+  },
+  {
+    "id": "Q385059",
+    "label": "مرغ لهستانی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q385059"
+  },
+  {
+    "id": "Q730303",
+    "label": "خروس لاری",
+    "sourceUrl": "http://www.wikidata.org/entity/Q730303"
+  },
+  {
+    "id": "Q793051",
+    "label": "اردک آیلزبری",
+    "sourceUrl": "http://www.wikidata.org/entity/Q793051"
+  },
+  {
+    "id": "Q859891",
+    "label": "بانتام ژاپنی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q859891"
+  },
+  {
+    "id": "Q474705",
+    "label": "غاز پومرانی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q474705"
+  },
+  {
+    "id": "Q636806",
+    "label": "لگرن",
+    "sourceUrl": "http://www.wikidata.org/entity/Q636806"
+  },
+  {
+    "id": "Q2488588",
+    "label": "دلیجه",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2488588"
+  },
+  {
+    "id": "Q2495957",
+    "label": "زاغی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2495957"
+  },
+  {
+    "id": "Q10436300",
+    "label": "مرغ لوهمن قهوه ای",
+    "sourceUrl": "http://www.wikidata.org/entity/Q10436300"
+  },
+  {
+    "id": "Q11156455",
+    "label": "مرغ دورکینگ",
+    "sourceUrl": "http://www.wikidata.org/entity/Q11156455"
+  },
+  {
+    "id": "Q3356487",
+    "label": "مرغ اورلف",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3356487"
+  },
+  {
+    "id": "Q2390274",
+    "label": "مرغابی مولارد",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2390274"
+  },
+  {
+    "id": "Q3250097",
+    "label": "زاغیان درختی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3250097"
+  },
+  {
+    "id": "Q994014",
+    "label": "اردک سفید",
+    "sourceUrl": "http://www.wikidata.org/entity/Q994014"
+  },
+  {
+    "id": "Q4971851",
+    "label": "بوقلمون سفید سینهپهن",
+    "sourceUrl": "http://www.wikidata.org/entity/Q4971851"
+  },
+  {
+    "id": "Q494252",
+    "label": "سیلکی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q494252"
+  },
+  {
+    "id": "Q523950",
+    "label": "کوبالایا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q523950"
+  },
+  {
+    "id": "Q4003288",
+    "label": "مرغ پلیموت راک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q4003288"
+  },
+  {
+    "id": "Q3469018",
+    "label": "پاشلک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3469018"
+  },
+  {
+    "id": "Q4850833",
+    "label": "اردک بالی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q4850833"
+  },
+  {
+    "id": "Q5443752",
+    "label": "طوطی وحشیده",
+    "sourceUrl": "http://www.wikidata.org/entity/Q5443752"
+  },
+  {
+    "id": "Q9300541",
+    "label": "مرغابی کایوگا",
+    "sourceUrl": "http://www.wikidata.org/entity/Q9300541"
+  },
+  {
+    "id": "Q1942487",
+    "label": "کبوتر چاهی خیابانی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1942487"
+  },
+  {
+    "id": "Q6067266",
+    "label": "کفتر ایرانی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q6067266"
+  },
+  {
+    "id": "Q780",
+    "label": "مرغ خانگی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q780"
+  },
+  {
+    "id": "Q25432",
+    "label": "قرقاول",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25432"
+  },
+  {
+    "id": "Q21685",
+    "label": "کبوتردریاییسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q21685"
+  },
+  {
+    "id": "Q21728",
+    "label": "بوبیسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q21728"
+  },
+  {
+    "id": "Q25510",
+    "label": "بازان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25510"
+  },
+  {
+    "id": "Q43489",
+    "label": "شاهین",
+    "sourceUrl": "http://www.wikidata.org/entity/Q43489"
+  },
+  {
+    "id": "Q48428",
+    "label": "پرنده شکاری",
+    "sourceUrl": "http://www.wikidata.org/entity/Q48428"
+  },
+  {
+    "id": "Q170177",
+    "label": "جغد برفی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q170177"
+  },
+  {
+    "id": "Q171953",
+    "label": "مرغ شاخدار",
+    "sourceUrl": "http://www.wikidata.org/entity/Q171953"
+  },
+  {
+    "id": "Q178559",
+    "label": "ماکیان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q178559"
+  },
+  {
+    "id": "Q214293",
+    "label": "جغد عقابی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q214293"
+  },
+  {
+    "id": "Q244813",
+    "label": "پنگوئن آفریقایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q244813"
+  },
+  {
+    "id": "Q208342",
+    "label": "کورکور",
+    "sourceUrl": "http://www.wikidata.org/entity/Q208342"
+  },
+  {
+    "id": "Q253941",
+    "label": "قناری اهلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q253941"
+  },
+  {
+    "id": "Q126167",
+    "label": "هما",
+    "sourceUrl": "http://www.wikidata.org/entity/Q126167"
+  },
+  {
+    "id": "Q82592",
+    "label": "پرندگان آبزی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q82592"
+  },
+  {
+    "id": "Q182209",
+    "label": "پنگوئن پادشاه",
+    "sourceUrl": "http://www.wikidata.org/entity/Q182209"
+  },
+  {
+    "id": "Q848706",
+    "label": "بوقلمون اهلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q848706"
+  },
+  {
+    "id": "Q853653",
+    "label": "چارخو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q853653"
+  },
+  {
+    "id": "Q846664",
+    "label": "باز",
+    "sourceUrl": "http://www.wikidata.org/entity/Q846664"
+  },
+  {
+    "id": "Q255503",
+    "label": "غاز اهلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q255503"
+  },
+  {
+    "id": "Q326301",
+    "label": "جوجه گوشتی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q326301"
+  },
+  {
+    "id": "Q161829",
+    "label": "پنگوئن امپراتور",
+    "sourceUrl": "http://www.wikidata.org/entity/Q161829"
+  },
+  {
+    "id": "Q945088",
+    "label": "لانهکنهای اصلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q945088"
+  },
+  {
+    "id": "Q192575",
+    "label": "زیر آبروک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q192575"
+  },
+  {
+    "id": "Q204179",
+    "label": "کبوتر اهلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q204179"
+  },
+  {
+    "id": "Q732775",
+    "label": "کبک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q732775"
+  },
+  {
+    "id": "Q205323",
+    "label": "قاپو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q205323"
+  },
+  {
+    "id": "Q2699803",
+    "label": "کاکایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2699803"
+  },
+  {
+    "id": "Q2216236",
+    "label": "خروس",
+    "sourceUrl": "http://www.wikidata.org/entity/Q2216236"
+  },
+  {
+    "id": "Q7898354",
+    "label": "پرندگان شکارشونده بلندبوم",
+    "sourceUrl": "http://www.wikidata.org/entity/Q7898354"
+  },
+  {
+    "id": "Q8154335",
+    "label": "ماهیخورکها",
+    "sourceUrl": "http://www.wikidata.org/entity/Q8154335"
+  },
+  {
+    "id": "Q742292",
+    "label": "اردک اهلی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q742292"
+  },
+  {
+    "id": "Q12765692",
+    "label": "نوکسرخسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q12765692"
+  },
+  {
+    "id": "Q25222",
+    "label": "جغدسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25222"
+  },
+  {
+    "id": "Q3758978",
+    "label": "غواصیان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3758978"
+  },
+  {
+    "id": "Q3112866",
+    "label": "کاکایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3112866"
+  },
+  {
+    "id": "Q21716",
+    "label": "لکلکسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q21716"
+  },
+  {
+    "id": "Q25332",
+    "label": "عقاب ماهیگیر",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25332"
+  },
+  {
+    "id": "Q16529344",
+    "label": "غاز",
+    "sourceUrl": "http://www.wikidata.org/entity/Q16529344"
+  },
+  {
+    "id": "Q28753",
+    "label": "گنجشکهای راستین",
+    "sourceUrl": "http://www.wikidata.org/entity/Q28753"
+  },
+  {
+    "id": "Q25334",
+    "label": "سینهسرخ اروپایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25334"
+  },
+  {
+    "id": "Q3901583",
+    "label": "بالآتشیان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3901583"
+  },
+  {
+    "id": "Q34384",
+    "label": "قو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q34384"
+  },
+  {
+    "id": "Q26226431",
+    "label": "پادراز",
+    "sourceUrl": "http://www.wikidata.org/entity/Q26226431"
+  },
+  {
+    "id": "Q28507",
+    "label": "لکلک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q28507"
+  },
+  {
+    "id": "Q865137",
+    "label": "پرنده بیپرواز",
+    "sourceUrl": "http://www.wikidata.org/entity/Q865137"
+  },
+  {
+    "id": "Q19338",
+    "label": "مرغسقاسانان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q19338"
+  },
+  {
+    "id": "Q123120",
+    "label": "کرکس",
+    "sourceUrl": "http://www.wikidata.org/entity/Q123120"
+  },
+  {
+    "id": "Q26012",
+    "label": "جغد معمولی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q26012"
+  },
+  {
+    "id": "Q358209",
+    "label": "عقاب صلاحالدین",
+    "sourceUrl": "http://www.wikidata.org/entity/Q358209"
+  },
+  {
+    "id": "Q21695",
+    "label": "کشیم",
+    "sourceUrl": "http://www.wikidata.org/entity/Q21695"
+  },
+  {
+    "id": "Q9147",
+    "label": "پنگوئن",
+    "sourceUrl": "http://www.wikidata.org/entity/Q9147"
+  },
+  {
+    "id": "Q55808",
+    "label": "پرنده دریایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q55808"
+  },
+  {
+    "id": "Q201251",
+    "label": "طاووس",
+    "sourceUrl": "http://www.wikidata.org/entity/Q201251"
+  },
+  {
+    "id": "Q446728",
+    "label": "کرکسهای جهان قدیم",
+    "sourceUrl": "http://www.wikidata.org/entity/Q446728"
+  },
+  {
+    "id": "Q512737",
+    "label": "لکلک کفنودفن",
+    "sourceUrl": "http://www.wikidata.org/entity/Q512737"
+  },
+  {
+    "id": "Q25365",
+    "label": "کلنگان",
+    "sourceUrl": "http://www.wikidata.org/entity/Q25365"
+  },
+  {
+    "id": "Q93208",
+    "label": "شترمرغ استرالیایی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q93208"
+  },
+  {
+    "id": "Q1211606",
+    "label": "رخکرکس",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1211606"
+  },
+  {
+    "id": "Q655510",
+    "label": "لکلک گردن کرکی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q655510"
+  },
+  {
+    "id": "Q130730",
+    "label": "حواصیل سفید بزرگ",
+    "sourceUrl": "http://www.wikidata.org/entity/Q130730"
+  },
+  {
+    "id": "Q1219291",
+    "label": "لکلک نوکزینی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q1219291"
+  },
+  {
+    "id": "Q3060012",
+    "label": "قار",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3060012"
+  },
+  {
+    "id": "Q3067559",
+    "label": "سسک",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3067559"
+  },
+  {
+    "id": "Q10968813",
+    "label": "زاغ",
+    "sourceUrl": "http://www.wikidata.org/entity/Q10968813"
+  },
+  {
+    "id": "Q3303681",
+    "label": "پرنده آبزی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3303681"
+  },
+  {
+    "id": "Q3349970",
+    "label": "پرنده سمی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3349970"
+  },
+  {
+    "id": "Q3736439",
+    "label": "مرغابی",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3736439"
+  },
+  {
+    "id": "Q3504198",
+    "label": "پرندگان سخنگو",
+    "sourceUrl": "http://www.wikidata.org/entity/Q3504198"
+  }
+]

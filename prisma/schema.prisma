@@ -1,0 +1,325 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoomStatus {
+  LOBBY
+  ACTIVE
+  FINISHED
+}
+
+enum GameState {
+  LOBBY
+  COUNTDOWN
+  PLAYING
+  STOP_CONFIRMATION
+  LOCKED
+  VALIDATING
+  VOTING
+  RESULTS
+  NEXT_ROUND
+  FINISHED
+}
+
+enum CategoryMode {
+  OPEN
+  CLOSED
+}
+
+enum ValidationStatus {
+  VALID
+  WRONG_LETTER
+  WRONG_CATEGORY
+  MEANINGLESS
+  MISSPELLING
+  UNKNOWN
+  INAPPROPRIATE
+  SPAM
+  EMPTY
+}
+
+enum RejectScope {
+  GLOBAL
+  CATEGORY
+}
+
+enum VoteChoice {
+  VALID
+  INVALID
+  UNSURE
+}
+
+enum ModerationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  MERGED
+}
+
+model Admin {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  passwordHash String
+  createdAt    DateTime   @default(now())
+  auditLogs    AuditLog[]
+}
+
+model Room {
+  id              String     @id @default(cuid())
+  inviteTokenHash String     @unique
+  status          RoomStatus @default(LOBBY)
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  players         Player[]
+  games           Game[]
+}
+
+model Player {
+  id               String       @id @default(cuid())
+  roomId           String
+  displayName      String
+  normalizedName   String
+  sessionTokenHash String       @unique
+  isHost           Boolean      @default(false)
+  isReady          Boolean      @default(false)
+  connected        Boolean      @default(true)
+  joinedAt         DateTime     @default(now())
+  disconnectedAt   DateTime?
+  room             Room         @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  submissions      Submission[]
+  scores           RoundScore[]
+  votes            Vote[]
+  stoppedRounds    Round[]      @relation("Stopper")
+
+  @@unique([roomId, normalizedName])
+}
+
+model Game {
+  id              String         @id @default(cuid())
+  roomId          String
+  state           GameState      @default(LOBBY)
+  durationSeconds Int            @default(180)
+  roundCount      Int            @default(5)
+  votingEnabled   Boolean        @default(true)
+  difficulty      String         @default("MIXED")
+  createdAt       DateTime       @default(now())
+  finishedAt      DateTime?
+  room            Room           @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  rounds          Round[]
+  categories      GameCategory[]
+}
+
+model Round {
+  id           String        @id @default(cuid())
+  gameId       String
+  number       Int
+  letter       String
+  state        GameState     @default(COUNTDOWN)
+  startsAt     DateTime?
+  endsAt       DateTime?
+  stopperId    String?
+  createdAt    DateTime      @default(now())
+  game         Game          @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  stopper      Player?       @relation("Stopper", fields: [stopperId], references: [id])
+  submissions  Submission[]
+  voteSessions VoteSession[]
+  scores       RoundScore[]
+
+  @@unique([gameId, number])
+}
+
+model Category {
+  id              String                @id @default(cuid())
+  name            String
+  slug            String                @unique
+  description     String
+  mode            CategoryMode
+  validationType  String
+  active          Boolean               @default(true)
+  minimumCoverage Int                   @default(1)
+  rules           Json                  @default("{}")
+  createdAt       DateTime              @default(now())
+  updatedAt       DateTime              @updatedAt
+  terms           TermCategory[]
+  rejected        RejectedAnswer[]
+  submissions     Submission[]
+  gameCategories  GameCategory[]
+  moderationItems ModerationQueueItem[]
+}
+
+model GameCategory {
+  gameId     String
+  categoryId String
+  position   Int
+  game       Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  @@id([gameId, categoryId])
+}
+
+model Term {
+  id            String         @id @default(cuid())
+  canonical     String
+  normalized    String         @unique
+  initialLetter String
+  active        Boolean        @default(true)
+  source        String?
+  confidence    Float          @default(1)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  categories    TermCategory[]
+  aliases       TermAlias[]
+}
+
+model TermCategory {
+  termId     String
+  categoryId String
+  notes      String?
+  term       Term     @relation(fields: [termId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([termId, categoryId])
+}
+
+model TermAlias {
+  id         String @id @default(cuid())
+  termId     String
+  original   String
+  normalized String @unique
+  kind       String @default("ALIAS")
+  term       Term   @relation(fields: [termId], references: [id], onDelete: Cascade)
+}
+
+model RejectedAnswer {
+  id         String           @id @default(cuid())
+  normalized String
+  categoryId String?
+  scope      RejectScope
+  reason     ValidationStatus
+  reasonFa   String
+  active     Boolean          @default(true)
+  category   Category?        @relation(fields: [categoryId], references: [id])
+
+  @@unique([normalized, categoryId])
+}
+
+model Submission {
+  id             String               @id @default(cuid())
+  roundId        String
+  playerId       String
+  categoryId     String
+  originalText   String
+  normalizedText String
+  status         ValidationStatus
+  reasonCode     String
+  reasonFa       String
+  lockedAt       DateTime?
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
+  round          Round                @relation(fields: [roundId], references: [id], onDelete: Cascade)
+  player         Player               @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  category       Category             @relation(fields: [categoryId], references: [id])
+  decisions      ValidationDecision[]
+
+  @@unique([roundId, playerId, categoryId])
+  @@index([roundId, categoryId, normalizedText])
+}
+
+model ValidationDecision {
+  id           String           @id @default(cuid())
+  submissionId String
+  status       ValidationStatus
+  reasonCode   String
+  reasonFa     String
+  source       String
+  createdAt    DateTime         @default(now())
+  submission   Submission       @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+}
+
+model VoteSession {
+  id             String   @id @default(cuid())
+  roundId        String
+  normalizedText String
+  categoryId     String
+  ownerPlayerId  String
+  startsAt       DateTime
+  endsAt         DateTime
+  resolvedAs     Boolean?
+  round          Round    @relation(fields: [roundId], references: [id], onDelete: Cascade)
+  votes          Vote[]
+
+  @@unique([roundId, normalizedText, categoryId])
+}
+
+model Vote {
+  id            String      @id @default(cuid())
+  voteSessionId String
+  playerId      String
+  choice        VoteChoice
+  createdAt     DateTime    @default(now())
+  session       VoteSession @relation(fields: [voteSessionId], references: [id], onDelete: Cascade)
+  player        Player      @relation(fields: [playerId], references: [id], onDelete: Cascade)
+
+  @@unique([voteSessionId, playerId])
+}
+
+model RoundScore {
+  id          String @id @default(cuid())
+  roundId     String
+  playerId    String
+  categoryId  String
+  points      Int
+  explanation String
+  round       Round  @relation(fields: [roundId], references: [id], onDelete: Cascade)
+  player      Player @relation(fields: [playerId], references: [id], onDelete: Cascade)
+
+  @@unique([roundId, playerId, categoryId])
+}
+
+model ModerationQueueItem {
+  id             String            @id @default(cuid())
+  normalizedText String
+  originalText   String
+  categoryId     String
+  letter         String
+  useCount       Int               @default(1)
+  gameCount      Int               @default(1)
+  firstSeenAt    DateTime          @default(now())
+  lastSeenAt     DateTime          @updatedAt
+  status         ModerationStatus  @default(PENDING)
+  engineReasons  Json
+  category       Category          @relation(fields: [categoryId], references: [id])
+  events         ModerationEvent[]
+
+  @@unique([normalizedText, categoryId])
+}
+
+model ModerationEvent {
+  id        String              @id @default(cuid())
+  itemId    String
+  action    String
+  before    Json?
+  after     Json?
+  note      String?
+  createdAt DateTime            @default(now())
+  item      ModerationQueueItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  adminId    String
+  action     String
+  entityType String
+  entityId   String
+  before     Json?
+  after      Json?
+  createdAt  DateTime @default(now())
+  admin      Admin    @relation(fields: [adminId], references: [id])
+
+  @@index([entityType, entityId])
+}
